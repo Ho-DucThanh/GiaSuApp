@@ -1,0 +1,368 @@
+﻿<Window x:Class="Demo_Profile.View.DangKiKhoaHoc"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Demo_Profile.View"
+        mc:Ignorable="d"
+        Title="DangKiKhoaHoc" Height="500" Width="500"  Background="Transparent" AllowsTransparency="True" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Border CornerRadius="10" Background="White">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+
+
+            <Grid Grid.Row="0"  Margin="0 8 0 0" >
+                <TextBlock HorizontalAlignment="Left" 
+                           Margin="20,39,0,0" 
+                           TextWrapping="Wrap"
+                           FontStyle="Italic"
+                           FontSize="12"
+                           Text="Khóa học JavaScrip giúp bạn hiểu rõ tường tận scope, toán tử, hàm, hướng đối tượng trong Javascript. Làm chủ Javascript, ES6" 
+                           VerticalAlignment="Top"/>
+
+
+            </Grid>
+            <TextBlock HorizontalAlignment="Center" 
+                       Margin="0,19,0,0" 
+                       TextWrapping="Wrap" 
+                       Text="Thông tin khóa học"
+                       FontWeight="SemiBold"
+                       FontSize="16"
+                       VerticalAlignment="Top"/>
+
+
+            <Border Grid.Row="0" 
+                    CornerRadius="10" 
+                    Background="Orange"
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top"
+                    Height="53"
+                    Width="220"
+                    Margin="19,116,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48"/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle RadiusX="10" RadiusY="10"
+                                Height="28" Width="28"
+                                HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Rectangle.Fill>
+                            <ImageBrush  Stretch="UniformToFill" ImageSource="/View/5.jpg"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+
+                    <Grid Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" Height="51">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="11" Height="51" >
+                            <Run FontWeight="SemiBold" Text="Theo lộ trình bài bản"/>
+                            <LineBreak/>
+                            <Run FontSize="9" Text="Kiến thức được sắp xếp từ cơ bản tới nâng cao, phù hợp cho dù bạn là người mới bắt đầu."/></TextBlock>
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <!--2-->
+            <Border Grid.Row="0" 
+                   CornerRadius="10" 
+                   Background="Orange"
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top"
+                   Height="53"
+                   Width="220"
+                   Margin="270,116,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48"/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle RadiusX="10" RadiusY="10"
+                               Height="28" Width="28"
+                               HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Rectangle.Fill>
+                            <ImageBrush  Stretch="UniformToFill" ImageSource="/View/5.jpg"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Grid Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" Height="51">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="11" Height="51" >
+        <Run FontWeight="SemiBold" Text="Người thầy tâm huyết"/>
+        <LineBreak/>
+        <Run FontSize="9" Text="Là một người có kinh nghiệm nhiều năm trong ngành lập trình, kỹ năng giảng dạy dễ hiểu."/></TextBlock>
+                    </Grid>
+                </Grid>
+            </Border>
+
+
+            <!--3-->
+            <Border Grid.Row="0" 
+       CornerRadius="10" 
+       Background="Orange"
+       HorizontalAlignment="Left" 
+       VerticalAlignment="Top"
+       Height="53"
+       Width="220"
+       Margin="270,188,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48"/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle RadiusX="10" RadiusY="10"
+                   Height="28" Width="28"
+                   HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Rectangle.Fill>
+                            <ImageBrush  Stretch="UniformToFill" ImageSource="/View/avt5.png"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Grid Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" Height="51">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="11" Height="51" >
+<Run FontWeight="SemiBold" Text="Học được làm được"/>
+<LineBreak/>
+<Run FontSize="9" Text="Sau mỗi tiết học lý thuyết, các học viên sẽ được thực hành ngay sau đó."/></TextBlock>
+                    </Grid>
+
+                </Grid>
+            </Border>
+
+
+            <!--4-->
+
+            <Border Grid.Row="0" 
+CornerRadius="10" 
+Background="Orange"
+HorizontalAlignment="Left" 
+VerticalAlignment="Top"
+Height="53"
+Width="220"
+Margin="19,188,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48"/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle RadiusX="10" RadiusY="10"
+            Height="28" Width="28"
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Rectangle.Fill>
+                            <ImageBrush  Stretch="UniformToFill" ImageSource="/View/5.jpg"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Grid Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" Height="51">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="11" Height="51" >
+<Run FontWeight="SemiBold" Text="Thời gian linh hoạt"/>
+<LineBreak/>
+<Run FontSize="9" Text="Thời gian học 6 tháng, mỗi buổi học sẽ có thời gian là 2 tiếng. Có thể chủ động sắp xếp lịch học phù hợp với bản thân."/></TextBlock>
+                    </Grid>
+
+                </Grid>
+            </Border>
+
+            <!--5-->
+            <Border Grid.Row="0" 
+CornerRadius="10" 
+Background="Orange"
+HorizontalAlignment="Left" 
+VerticalAlignment="Top"
+Height="53"
+Width="220"
+Margin="19,260,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48"/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle RadiusX="10" RadiusY="10"
+            Height="28" Width="28"
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Rectangle.Fill>
+                            <ImageBrush  Stretch="UniformToFill" ImageSource="/View/5.jpg"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Grid Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" Height="51">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="11" Height="51" >
+<Run FontWeight="SemiBold" Text="Thực hành dự án"/>
+<LineBreak/>
+<Run FontSize="9" Text="Với khóa học này, bạn sẽ được trực tiếp làm các dự án cùng với đó sẽ có sự hỗ trợ của gia sư khi cần."/></TextBlock>
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+            <!--6-->
+            <Border Grid.Row="0" 
+CornerRadius="10" 
+Background="Orange"
+HorizontalAlignment="Left" 
+VerticalAlignment="Top"
+Height="53"
+Width="220"
+Margin="270,260,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48"/>
+                        <ColumnDefinition/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <Rectangle RadiusX="10" RadiusY="10"
+            Height="28" Width="28"
+            HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Rectangle.Fill>
+                            <ImageBrush  Stretch="UniformToFill" ImageSource="/View/5.jpg"/>
+                        </Rectangle.Fill>
+                    </Rectangle>
+
+                    <Grid Grid.Column="1" Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" Height="51">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="11" Height="51" >
+<Run FontWeight="SemiBold" Text="Song ngữ Anh - Việt"/>
+<LineBreak/>
+<Run FontSize="9" Text="Tài liệu học tập sẽ có cả tiếng Anh và tiếng Việt giúp dễ đọc, dễ hiểu."/></TextBlock>
+                    </Grid>
+
+                </Grid>
+
+            </Border>
+            <TextBlock HorizontalAlignment="Left" Margin="19,86,0,0" TextWrapping="Wrap" 
+                       Text="Tại sao bạn nên đăng ký khóa học này?" VerticalAlignment="Top"
+                       FontSize="13" FontWeight="SemiBold"/>
+            <Border BorderThickness="0 1 0 1" BorderBrush="AliceBlue" VerticalAlignment="Top" Margin="0,333,0,0" Grid.RowSpan="2"/>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="29*"/>
+                    <RowDefinition Height="137*"/>
+                </Grid.RowDefinitions>
+
+                <Border Grid.Row="0" 
+                        CornerRadius="10" 
+                        Background="Navy"
+                        Opacity=".7"
+                        HorizontalAlignment="Left" 
+                        VerticalAlignment="Top"
+                        Height="140"
+                        Width="220"
+                        Margin="19,10,0,0" Grid.RowSpan="2">
+
+                    <Grid Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="174" Height="100">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="9" Height="100" >
+                        <Run FontWeight="SemiBold" Text="₫ 789.000" FontSize="11"/>
+                        <Run Text="₫1.699.000" TextDecorations="Strikethrough" FontSize="9"/>
+                        <LineBreak/>
+                        <Run Text="5 giờ" FontWeight="SemiBold" FontSize="9"/>
+                        <Run Text="còn lại với mức giá này!" FontSize="9" />
+                        <LineBreak/>
+                            
+                         <Run Text="Khóa học này bao gồm:" FontSize="9" FontWeight="SemiBold"/>
+                         <LineBreak/>
+                         <Run Text="+ 120 buổi học bao gồm Online và Offline"/>
+                         <LineBreak/>
+                         <Run Text="+ Thời lượng: 3 buổi/ tuần"/>
+                         <LineBreak/>
+                         <Run Text="+ 30% lý thuyết, 70% thực hành."/>
+                          <LineBreak/>
+                         <Run Text="+ Cam kết: Nếu không vững, học lại miễn phí."/>
+
+                        </TextBlock>
+
+
+                    </Grid>
+                </Border>
+
+
+                <Border Grid.Row="0" 
+            CornerRadius="10" 
+            Background="Blue"
+            Opacity=".7"
+            HorizontalAlignment="Left" 
+            VerticalAlignment="Top"
+            Height="100"
+            Width="220"
+            Margin="270,10,0,0" Grid.RowSpan="2">
+
+                    <Grid Margin="0,0,0,0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="205" Height="100">
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="9" Height="100" Width="205" >
+            
+                
+             <Run Text="Khóa học này bao gồm:" FontSize="9" FontWeight="SemiBold"/>
+             <LineBreak/>
+             <Run Text="▪ Module 1: Java cơ bản và Lập trình hướng đối tượng."/>
+             <LineBreak/>
+             <Run Text="▪ Module 2: Kỹ thuật lập trình và công nghệ lưu trữ."/>
+             <LineBreak/>
+             <Run Text="▪ Module 3: Phát triển ứng dụng Web với Java Server Page - JSP, Servlet, Hibernate."/>
+              <LineBreak/>
+             <Run Text="▪ Module 4: Phát triển ứng dụng Web với Spring Framework."/>
+
+                        </TextBlock>
+
+
+                    </Grid>
+
+
+
+                </Border>
+
+                <Button
+                        Content="Học thử miễn phí" 
+                        FontSize="10"
+                        HorizontalAlignment="Left" VerticalAlignment="Top"
+                        Foreground="White"
+                        Background="#FFF7542E"
+                        BorderThickness="0"
+                        Width="90" Height="27" Margin="270,94,0,0" Grid.Row="1">
+                    <Button.Resources>
+                        <!--to make border corner round-->
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+                <Button
+         Content="Đăng kí ngay" 
+         FontSize="10"
+         HorizontalAlignment="Left" VerticalAlignment="Top"
+         Foreground="White"
+         Background="#FFF7542E"
+         BorderThickness="0"
+         Width="90" Height="27" Margin="400,94,0,0" Grid.Row="1">
+                    <Button.Resources>
+                        <!--to make border corner round-->
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="10"/>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+
+
+            </Grid>
+
+
+        </Grid>
+
+
+
+
+
+
+    </Border>
+</Window>

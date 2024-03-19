@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="Demo_Profile.View.ThongKe"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:cus="clr-namespace:Demo_Profile.ViewModel"
+             mc:Ignorable="d" 
+             d:DesignHeight="720" d:DesignWidth="820" Style="{StaticResource Page_Style}">
+    
+    
+    <Grid>
+
+        <Border CornerRadius="0,20,20,0">
+            <Border.Background>
+                <ImageBrush ImageSource="/Images/order_page.png"
+                         Stretch="None" />
+            </Border.Background>
+        </Border>
+
+        <Grid>
+
+            <TextBlock Text="DATE  :"
+                    Foreground="#DBDBDB"
+                    FontSize="12"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    FontFamily="/Fonts/#Rubik Medium"
+                    Margin="0,145,160,0" />
+
+        </Grid>
+
+        </Grid>
+</UserControl>
