@@ -9,7 +9,7 @@
         xmlns:vm="clr-namespace:Demo_Profile.ViewModel"
         xmlns:Menu="clr-namespace:Demo_Profile.Utilities"
         Title="HocVien" Height="720" Width="1080" AllowsTransparency="True" WindowStartupLocation="CenterScreen" 
-                WindowStyle="None" Background="Transparent">
+                WindowStyle="None" Background="Transparent" Loaded="Window_Loaded">
 
     <Window.DataContext>
         <vm:HocVienNavigationVM/>
@@ -47,9 +47,9 @@
                             </Border>
 
                             <!--Menu Titles-->
-                            <TextBlock Text="Hồ Đức Thanh" Foreground="White" FontSize="22" FontWeight="SemiBold"
-                       DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
-                            <TextBlock Text="Admin, HaNoi" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
+                            <Label Content="" x:Name="lblName" Foreground="White" FontSize="22" FontWeight="SemiBold"
+                                   DockPanel.Dock="Top" Margin="20 25 0 10"/>
+                            <TextBlock Text="HocVien, HaNoi" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
                         DockPanel.Dock="Top" TextAlignment="Center"/>
 
                             <!--Menu Seprator-->
@@ -67,7 +67,7 @@
                                 <Menu:Btn Style="{StaticResource menuButton}" Command="{Binding KhoaHocCommand}">
                                     <StackPanel Orientation="Horizontal">
                                         <Icon:PackIconMaterial Kind="AccountMultipleOutline" Style="{StaticResource menuButtonIcon}"/>
-                                        <TextBlock Text="Khóa Học"/>
+                                        <TextBlock Text="Đánh Giá"/>
                                     </StackPanel>
                                 </Menu:Btn>
 

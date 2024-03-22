@@ -97,10 +97,30 @@
     <Compile Include="Run\HocVien.xaml.cs">
       <DependentUpon>HocVien.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Chat Seprator.xaml.cs">
+      <DependentUpon>Chat Seprator.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ImageLogo.xaml.cs">
+      <DependentUpon>ImageLogo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Item.xaml.cs">
+      <DependentUpon>Item.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MessageChat.xaml.cs">
+      <DependentUpon>MessageChat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\MyMessageChat.xaml.cs">
+      <DependentUpon>MyMessageChat.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\UserChat.xaml.cs">
+      <DependentUpon>UserChat.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Utilities\Btn.cs" />
     <Compile Include="Utilities\RelayCommand.cs" />
     <Compile Include="Utilities\ViewModelBase.cs" />
+    <Compile Include="ViewModel\ChapNhanKhoaHocVM.cs" />
     <Compile Include="ViewModel\CreateKhoaHocVM.cs" />
+    <Compile Include="ViewModel\DanhGiaVM.cs" />
     <Compile Include="ViewModel\GiaSuNavigationVM.cs" />
     <Compile Include="ViewModel\HocVienNavigationVM.cs" />
     <Compile Include="ViewModel\KhoaHocVM.cs" />
@@ -115,23 +135,14 @@
     <Compile Include="View\DangKiKhoaHoc.xaml.cs">
       <DependentUpon>DangKiKhoaHoc.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\DanhGia.xaml.cs">
+      <DependentUpon>DanhGia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\items.xaml.cs">
+      <DependentUpon>items.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\KhoaHoc.xaml.cs">
       <DependentUpon>KhoaHoc.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Messages.xaml.cs">
-      <DependentUpon>Messages.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\ThoiKhoaBieu.xaml.cs">
-      <DependentUpon>ThoiKhoaBieu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\TrangChu.xaml.cs">
-      <DependentUpon>TrangChu.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\Settings.xaml.cs">
-      <DependentUpon>Settings.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="View\ThongKe.xaml.cs">
-      <DependentUpon>ThongKe.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\ListGiaSu.xaml.cs">
       <DependentUpon>ListGiaSu.xaml</DependentUpon>
@@ -139,11 +150,26 @@
     <Compile Include="View\ListHocVien.xaml.cs">
       <DependentUpon>ListHocVien.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\items.xaml.cs">
-      <DependentUpon>items.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\MenuButton.xaml.cs">
       <DependentUpon>MenuButton.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Messages.xaml.cs">
+      <DependentUpon>Messages.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TaoKhoaHoc.xaml.cs">
+      <DependentUpon>TaoKhoaHoc.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ThoiKhoaBieu.xaml.cs">
+      <DependentUpon>ThoiKhoaBieu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ThongKe.xaml.cs">
+      <DependentUpon>ThongKe.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TrangChu.xaml.cs">
+      <DependentUpon>TrangChu.xaml</DependentUpon>
     </Compile>
     <Page Include="Images\icons.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -166,6 +192,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Style\Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\Chat.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Style\DanhGia.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -194,11 +228,43 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Style\TaoKhoaHoc.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\Chat Seprator.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\ImageLogo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\Item.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\MessageChat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\MyMessageChat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="UserControls\UserChat.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Utilities\DataTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\DangKiKhoaHoc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\DanhGia.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -206,45 +272,49 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="View\items.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="View\KhoaHoc.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Messages.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\ThoiKhoaBieu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\TrangChu.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\Settings.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\ThongKe.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\ListGiaSu.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="View\ListHocVien.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\items.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\MenuButton.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Messages.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\Settings.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TaoKhoaHoc.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ThoiKhoaBieu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\ThongKe.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\TrangChu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -292,7 +362,9 @@
   <ItemGroup>
     <Resource Include="Images\key.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Images\mtinh.png" />
+  </ItemGroup>
   <ItemGroup>
     <Resource Include="Login\users.png" />
   </ItemGroup>
@@ -330,73 +402,58 @@
     <Resource Include="Images\user1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\Cthuong.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\java.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\python.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\CSharp.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\php.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\jsd.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\5.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\avt5.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\hee.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\avt6.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\avt1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\avt3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\avt9.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\avt4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\ngang.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\avt7.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="View\doc.jpg" />
+    <Resource Include="Images\teacher2.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="View\4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
+    <Resource Include="View\5.jpg" />
+    <Resource Include="View\avt1.jpg" />
+    <Resource Include="View\avt3.jpg" />
+    <Resource Include="View\avt4.jpg" />
+    <Resource Include="View\avt5.png" />
+    <Resource Include="View\avt6.jpg" />
+    <Resource Include="View\avt7.jpg" />
+    <Resource Include="View\avt9.jpg" />
+    <Resource Include="View\chat.jpg" />
+    <Resource Include="View\Course.png" />
+    <Resource Include="View\CSharp.jpg" />
+    <Resource Include="View\Cthuong.jpg" />
+    <Resource Include="View\doc.jpg" />
+    <Resource Include="View\hee.jpg" />
+    <Resource Include="View\java.png" />
+    <Resource Include="View\jsd.png" />
+    <Resource Include="View\mtinh.png" />
+    <Resource Include="View\ngang.jpg" />
+    <Resource Include="View\php.jpg" />
+    <Resource Include="View\pic1.png" />
+    <Resource Include="View\python.png" />
+    <Resource Include="View\thoikhoabieu.png" />
     <Resource Include="View\user1.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\pic1.png" />
+    <Resource Include="Images\angry.png" />
+    <Resource Include="Images\bad.png" />
+    <Resource Include="Images\happy.png" />
+    <Resource Include="Images\love.png" />
+    <Resource Include="Images\normal.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\thoikhoabieu.png" />
+    <Resource Include="View\bad.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\chat.jpg" />
+    <Resource Include="View\angry.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="View\Course.png" />
+    <Resource Include="View\normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="View\teacher2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

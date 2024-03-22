@@ -5,7 +5,7 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:cus="clr-namespace:Demo_Profile.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="720" d:DesignWidth="850" Style="{StaticResource Page_Style}">
+             d:DesignHeight="720" d:DesignWidth="850" Style="{StaticResource Page_Style}" Loaded="UserControl_Loaded">
 
     <UserControl.Resources>
         <ResourceDictionary>
@@ -262,7 +262,7 @@ VerticalAlignment="Center">
                         <Grid Grid.Column="1">
                             <TextBlock Margin="10,0,0,0" HorizontalAlignment="Left"
                                                VerticalAlignment="Center" Foreground="White">
-                                        <Run Text="Lê Thành Trung" 
+                                        <Run Text="" x:Name="txtGiaSuName"
                                              FontSize="11" 
                                              FontWeight="Bold"/>
                                         <LineBreak/>
@@ -292,7 +292,11 @@ VerticalAlignment="Center">
                     </Button>
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Height="66" Width="177">
                         <Rectangle RadiusX="8" RadiusY="8" Fill="White" Opacity=".1"/>
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="12" ><Run FontWeight="SemiBold" Text="Khóa học lập trình JavaScript"/><LineBreak/><Run FontSize="10" Text="Mục tiêu của khóa học này giúp các bạn hiểu chi tiết về các khái niệm cơ bản trong JS."/></TextBlock>
+                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" Foreground="White" FontSize="12" >
+                            <Run FontWeight="SemiBold" Text="" x:Name="txtNameKhoaHoc"/>
+                            <LineBreak/>
+                            <Run FontSize="10" Text="" x:Name="txtMoTa"/>
+                        </TextBlock>
                     </Grid>
 
                 </Grid>
@@ -337,10 +341,22 @@ VerticalAlignment="Center">
                         </Grid>
                     </Grid>
 
-                    <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Margin="23,60,0,0">
-                        <Rectangle Height="21" RadiusX="8" RadiusY="8" Width="60" Fill="#FFF7542E"/>
-                        <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="SemiBold" FontSize="8" Text="Xem khóa học"/>
-                    </Grid>
+                    <Button
+                    Content="Xem khóa học" 
+                    FontSize="8"
+                    FontWeight="SemiBold"
+                    HorizontalAlignment="Left" VerticalAlignment="Top"
+                    Foreground="White"
+                    Background="#FFF7542E"
+                    Margin="23,59,0,0"
+                    BorderThickness="0"
+                    Width="60" Height="21" Click="XemKhoaHoc_Click">
+                        <Button.Resources>
+                            <Style TargetType="{x:Type Border}">
+                                <Setter Property="CornerRadius" Value="8"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
 
                     <Grid HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,10" Height="66" Width="177">
                         <Rectangle RadiusX="8" RadiusY="8" Fill="White" Opacity=".1"/>

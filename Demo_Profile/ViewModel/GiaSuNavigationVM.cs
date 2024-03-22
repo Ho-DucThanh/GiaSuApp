@@ -20,7 +20,7 @@ namespace Demo_Profile.ViewModel
                 OnPropertyChanged();
             }
         }
-        public ICommand TrangChuCommand { get; set; }
+        public ICommand ChapNhanDkiCommand { get; set; }
 
         public ICommand CreateKhoaHocCommand { get; set; }
         public ICommand ThoiKhoaBieuCommand { get; set; }
@@ -30,8 +30,8 @@ namespace Demo_Profile.ViewModel
 
 
 
-        private void TrangChu(object obj) => GSCurrentView = new TrangChuVM();
         private void CreateKhoaHoc(object obj) => GSCurrentView = new CreateKhoaHocVM();
+        private void ChapNhan(object obj) => GSCurrentView = new ChapNhanKhoaHocVM();
         private void ThoiKhoaBieu(object obj) => GSCurrentView = new ThoiKhoaBieuVM();
         private void Messages(object obj) => GSCurrentView = new MessagesVM();
         private void Settings(object obj) => GSCurrentView = new SettingsVM();
@@ -39,13 +39,13 @@ namespace Demo_Profile.ViewModel
 
         public GiaSuNavigationVM()
         {
-            TrangChuCommand = new RelayCommand(TrangChu);
             CreateKhoaHocCommand = new RelayCommand(CreateKhoaHoc);
+            ChapNhanDkiCommand = new RelayCommand(ChapNhan);
             ThoiKhoaBieuCommand = new RelayCommand(ThoiKhoaBieu);
             MessagesCommand = new RelayCommand(Messages);
             SettingsCommand = new RelayCommand(Settings);
 
-            GSCurrentView = new TrangChuVM();
+            GSCurrentView = new CreateKhoaHocVM();
         }
     }
 }

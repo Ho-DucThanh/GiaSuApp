@@ -41,5 +41,55 @@ namespace Demo_Profile.View
             /* Gán dữ liệu lên dataGrid */
             GiaSuDataGrid.ItemsSource = dtGiaSu.AsDataView();
         }
+
+        private void txtFilter_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string sql = "";
+            if (txtFilter.Text.Trim() == "")
+            {
+                sql = "Select * from tblGiaSu";
+            }
+            else
+            {
+                sql = "Select * from tblGiaSu where HoTen like '%" + txtFilter.Text + "%'";
+            }
+
+        }
+
+        private void BtnTimKiem_Click(object sender, RoutedEventArgs e)
+        {
+            string sql = "";
+            if (txtFilter.Text.Trim() == "")
+                sql = "Select * from tblGiaSu";
+            else
+            {
+                sql = "Select * from tblGiaSu where HoTen is not null";
+                if (txtFilter.Text.Trim() != "")
+                    sql = sql + " and HoTen like '%" + txtFilter.Text + "%'";
+               
+            }
+            DataTable dtTimKiem = dtBase.ReadData(sql);
+            GiaSuDataGrid.ItemsSource = dtTimKiem.AsDataView();
+        }
+
+        private void Delete(string id)
+        {
+            string strDelete = "DELETE FROM tblGiaSu WHERE Email = ('" + id + "')";
+            dtBase.ChangeData(strDelete);
+            LoadData();
+        }
+
+        private void BtnDelete_Click(object sender, RoutedEventArgs e)
+        {
+            DataRowView selectedRow = GiaSuDataGrid.SelectedItem as DataRowView;
+            if (selectedRow != null)
+            {
+                string selectedID = selectedRow["Email"].ToString();
+                if (MessageBox.Show("Bạn có chắc chắn muốn xóa dữ liệu có Email là " + selectedID + "?", "Xác nhận xóa", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
+                {
+                    Delete(selectedID);
+                }
+            }
+        }
     }
 }

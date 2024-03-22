@@ -23,13 +23,13 @@ namespace Demo_Profile.Login
     public partial class SignIn : Window
     {
         public ViewModelBase ViewModel { get; set; }
-        public static string id = "", mk = "", Hoten;
+        public static string Hoten = "", GioiTinh = "", Email = "", MatKhau = "", NgaySinh = "", VaiTro = "";
         Database.DataProcess dtBase = new Database.DataProcess();
         public SignIn()
         {
             InitializeComponent();
-            ViewModel = new ViewModelBase();
-            DataContext = ViewModel;
+            /*ViewModel = new ViewModelBase();
+            DataContext = ViewModel;*/
         }
         private void textUser_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -70,7 +70,7 @@ namespace Demo_Profile.Login
             
         }
 
-        private void BtnSignIn_Click(object sender, RoutedEventArgs e)
+        public void BtnSignIn_Click(object sender, RoutedEventArgs e)
         {
             string sql = "";
 
@@ -90,10 +90,14 @@ namespace Demo_Profile.Login
                     return;
                 }
 
-                ViewModel.HoTen = dtTaiKhoan.Rows[0]["HoTen"].ToString();
-                
-                id = txtUser.Text;
-                mk = txtPassword.Password;
+                Hoten = dtTaiKhoan.Rows[0]["HoTen"].ToString();
+                GioiTinh = dtTaiKhoan.Rows[0]["Email"].ToString();
+                Email = dtTaiKhoan.Rows[0]["GioiTinh"].ToString();
+                MatKhau = dtTaiKhoan.Rows[0]["MatKhau"].ToString();
+                NgaySinh = dtTaiKhoan.Rows[0]["NgaySinh"].ToString();
+                VaiTro = dtTaiKhoan.Rows[0]["VaiTro"].ToString();
+
+
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 GiaSu giasu = new GiaSu();
@@ -117,9 +121,13 @@ namespace Demo_Profile.Login
                     return;
                 }
 
-                ViewModel.HoTen = dtTaiKhoan.Rows[0]["HoTen"].ToString();
-                id = txtUser.Text;
-                mk = txtPassword.Password;
+                Hoten = dtTaiKhoan.Rows[0]["HoTen"].ToString();
+
+                Email = dtTaiKhoan.Rows[0]["TenDN"].ToString();
+                MatKhau = dtTaiKhoan.Rows[0]["MatKhau"].ToString();
+
+                
+
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 MainWindow main = new MainWindow();
@@ -143,9 +151,15 @@ namespace Demo_Profile.Login
                     return;
                 }
 
-                ViewModel.HoTen = dtTaiKhoan.Rows[0]["HoTen"].ToString();
-                id = txtUser.Text;
-                mk = txtPassword.Password;
+                Hoten = dtTaiKhoan.Rows[0]["HoTen"].ToString();
+                GioiTinh = dtTaiKhoan.Rows[0]["GioiTinh"].ToString();
+                Email = dtTaiKhoan.Rows[0]["GioiTinh"].ToString();
+                MatKhau = dtTaiKhoan.Rows[0]["MatKhau"].ToString();
+                NgaySinh = dtTaiKhoan.Rows[0]["NgaySinh"].ToString();
+                VaiTro = dtTaiKhoan.Rows[0]["VaiTro"].ToString();
+
+
+
                 MessageBox.Show("Đăng nhập thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
 
                 HocVien hocvien = new HocVien();

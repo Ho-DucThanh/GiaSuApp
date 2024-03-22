@@ -13,6 +13,9 @@
                 <ResourceDictionary Source="Style/DataGrid.xaml"/>
                 <ResourceDictionary Source="Style/SignIn.xaml" />
                 <ResourceDictionary Source="Style/Schedule.xaml"/>
+                <ResourceDictionary Source="Style/Chat.xaml"/>
+                <ResourceDictionary Source="Style/TaoKhoaHoc.xaml"/>
+                <ResourceDictionary Source="Style/DanhGia.xaml"/>
                 <ResourceDictionary Source="Utilities/DataTemplate.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>

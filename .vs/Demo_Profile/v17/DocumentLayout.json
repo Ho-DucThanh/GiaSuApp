@@ -1,70 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Project_C#\\WPF\\CuoiKi\\Demo_Profile\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{13C46B0B-7476-4503-9C64-42F93D3CAC68}|Demo_Profile\\Demo_Profile.csproj|d:\\project_c#\\wpf\\cuoiki\\demo_profile\\demo_profile\\run\\giasu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{13C46B0B-7476-4503-9C64-42F93D3CAC68}|Demo_Profile\\Demo_Profile.csproj|solutionrelative:demo_profile\\run\\giasu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13C46B0B-7476-4503-9C64-42F93D3CAC68}|Demo_Profile\\Demo_Profile.csproj|d:\\project_c#\\wpf\\cuoiki\\demo_profile\\demo_profile\\login\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13C46B0B-7476-4503-9C64-42F93D3CAC68}|Demo_Profile\\Demo_Profile.csproj|solutionrelative:demo_profile\\login\\signin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{13C46B0B-7476-4503-9C64-42F93D3CAC68}|Demo_Profile\\Demo_Profile.csproj|d:\\project_c#\\wpf\\cuoiki\\demo_profile\\demo_profile\\utilities\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{13C46B0B-7476-4503-9C64-42F93D3CAC68}|Demo_Profile\\Demo_Profile.csproj|solutionrelative:demo_profile\\utilities\\viewmodelbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 100,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 2,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ViewModelBase.cs",
-              "DocumentMoniker": "D:\\Project_C#\\WPF\\CuoiKi\\Demo_Profile\\Demo_Profile\\Utilities\\ViewModelBase.cs",
-              "RelativeDocumentMoniker": "Demo_Profile\\Utilities\\ViewModelBase.cs",
-              "ToolTip": "D:\\Project_C#\\WPF\\CuoiKi\\Demo_Profile\\Demo_Profile\\Utilities\\ViewModelBase.cs",
-              "RelativeToolTip": "Demo_Profile\\Utilities\\ViewModelBase.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T15:04:19.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "SignIn.xaml.cs",
-              "DocumentMoniker": "D:\\Project_C#\\WPF\\CuoiKi\\Demo_Profile\\Demo_Profile\\Login\\SignIn.xaml.cs",
-              "RelativeDocumentMoniker": "Demo_Profile\\Login\\SignIn.xaml.cs",
-              "ToolTip": "D:\\Project_C#\\WPF\\CuoiKi\\Demo_Profile\\Demo_Profile\\Login\\SignIn.xaml.cs",
-              "RelativeToolTip": "Demo_Profile\\Login\\SignIn.xaml.cs",
-              "ViewState": "AQIAAEwAAAAAAAAAAAAAAFwAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:47:47.491Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GiaSu.xaml",
-              "DocumentMoniker": "D:\\Project_C#\\WPF\\CuoiKi\\Demo_Profile\\Demo_Profile\\Run\\GiaSu.xaml",
-              "RelativeDocumentMoniker": "Demo_Profile\\Run\\GiaSu.xaml",
-              "ToolTip": "D:\\Project_C#\\WPF\\CuoiKi\\Demo_Profile\\Demo_Profile\\Run\\GiaSu.xaml",
-              "RelativeToolTip": "Demo_Profile\\Run\\GiaSu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-03-18T14:45:52.87Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

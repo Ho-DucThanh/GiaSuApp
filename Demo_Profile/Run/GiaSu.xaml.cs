@@ -12,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Demo_Profile.Run;
 
 namespace Demo_Profile.Run
 {
@@ -56,6 +57,11 @@ namespace Demo_Profile.Run
             SignIn signIn = new SignIn();
             this.Close();
             signIn.ShowDialog();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            lblName.Content = SignIn.Hoten;
         }
     }
 }

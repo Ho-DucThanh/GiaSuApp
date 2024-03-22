@@ -10,7 +10,7 @@
         xmlns:login="clr-namespace:Demo_Profile.Login"
         xmlns:Menu="clr-namespace:Demo_Profile.Utilities"
         Title="GiaSu" Height="720" Width="1080" AllowsTransparency="True" WindowStartupLocation="CenterScreen" 
-                WindowStyle="None" Background="Transparent">
+                WindowStyle="None" Background="Transparent" Loaded="Window_Loaded">
 
     <Window.DataContext>
         <vm:GiaSuNavigationVM/>
@@ -49,8 +49,8 @@
                             </Border>
 
                             <!--Menu Titles-->
-                            <TextBlock Text="{Binding HoTen}" Foreground="White" FontSize="22" FontWeight="SemiBold"
-                       DockPanel.Dock="Top" TextAlignment="Center" Margin="5 25 0 10"/>
+                            <Label Content="" x:Name="lblName" Foreground="White" FontSize="22" FontWeight="SemiBold"
+                                 DockPanel.Dock="Top" Margin="20 25 0 10"/>
                             <TextBlock Text="GiaSu, HaNoi" Foreground="#d0bfff" FontSize="14" FontWeight="SemiBold"
                         DockPanel.Dock="Top" TextAlignment="Center"/>
 
@@ -66,7 +66,7 @@
                                     </StackPanel>
                                 </Menu:Btn>
 
-                                <Menu:Btn Style="{StaticResource menuButton}" Command="{Binding KhoaHocCommand}">
+                                <Menu:Btn Style="{StaticResource menuButton}" Command="{Binding TrangChuCommand}">
                                     <StackPanel Orientation="Horizontal">
                                         <Icon:PackIconMaterial Kind="AccountMultipleOutline" Style="{StaticResource menuButtonIcon}"/>
                                         <TextBlock Text="Thông Báo"/>

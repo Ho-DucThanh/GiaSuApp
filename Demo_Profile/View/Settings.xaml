@@ -6,7 +6,7 @@
              xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:cus="clr-namespace:Demo_Profile.ViewModel"
              mc:Ignorable="d" 
-             d:DesignHeight="720" d:DesignWidth="820" Style="{StaticResource Page_Style}">
+             d:DesignHeight="720" d:DesignWidth="820" Style="{StaticResource Page_Style}" Loaded="UserControl_Loaded">
 
     <Grid>
         <Grid.RowDefinitions>
@@ -28,7 +28,7 @@
         </StackPanel>
        
         <!--Tab button-->
-        
+
 
 
 
@@ -89,14 +89,15 @@
                 <TextBox x:Name="txtVaiTro" Style="{StaticResource textboxSearch}" TextChanged="txtCity_TextChanged"></TextBox>
             </Grid>
 
-            
+            <Grid Margin="121,423,445,-423">
+                <TextBlock Margin="0,-15,0,15" FontSize="14" FontWeight="DemiBold">Ngày Sinh</TextBlock>
+                <TextBlock x:Name="textNgaySinh" Margin="20 0" VerticalAlignment="Center" Foreground="#b0b9c6" IsHitTestVisible="False"
+     Panel.ZIndex="1"></TextBlock>
+                <TextBox x:Name="txtNS" Style="{StaticResource textboxSearch}" TextChanged="txtCity_TextChanged"></TextBox>
+            </Grid>
 
-            <Button x:Name="btnSave" Margin="0,360,39,-471" Content="Save Changes" Style="{StaticResource addButton}" Width="150"></Button>
-
-
-
+            <Button x:Name="btnSave" Margin="0,360,39,-500" Content="Save Changes" Style="{StaticResource addButton}" Width="150" Click="BtnEdit_Click"></Button>
 
         </Grid>
-
     </Grid>
 </UserControl>

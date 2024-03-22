@@ -60,5 +60,21 @@ namespace Demo_Profile.View
                 }
             }
         }
+
+        private void BtnTimKiem_Click(object sender, RoutedEventArgs e)
+        {
+            string sql = "";
+            if (txtFilter.Text.Trim() == "")
+                sql = "Select * from tblHocVien";
+            else
+            {
+                sql = "Select * from tblGiaSu where HoTen is not null";
+                if (txtFilter.Text.Trim() != "")
+                    sql = sql + " and HoTen like '%" + txtFilter.Text + "%'";
+
+            }
+            DataTable dtTimKiem = dtBase.ReadData(sql);
+            HocVienDataGrid.ItemsSource = dtTimKiem.AsDataView();
+        }
     }
 }

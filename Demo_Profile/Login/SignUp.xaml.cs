@@ -98,6 +98,12 @@ namespace Demo_Profile.Login
                 dtBase.ChangeData("Insert into tblGiaSu values('" + txtName.Text + "', '" + gioiTinh + "', '" + txtNgaySinh.Text + "', '" + txtEmail.Text + "', '" + txtMatKhau.Text + "', '" + VaiTro + "')");
                 MessageBox.Show("Đăng ký thành công", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
             }
+            txtName.Text = "";
+            txtEmail.Text = "";
+            txtMatKhau.Text = "";
+            txtNgaySinh.Text = "";
+            cbbGTinh.Text = "";
+            cbbVTro.Text = "";
         }
     }
 }

@@ -20,6 +20,7 @@ namespace Demo_Profile.View
     /// </summary>
     public partial class TrangChu : UserControl
     {
+        Database.DataProcess dtBase = new Database.DataProcess();
         public TrangChu()
         {
             InitializeComponent();
@@ -29,6 +30,13 @@ namespace Demo_Profile.View
         {
             DangKiKhoaHoc dki = new DangKiKhoaHoc();
             dki.ShowDialog();
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            txtGiaSuName.Text = TaoKhoaHoc.NameGiaSu;
+            txtNameKhoaHoc.Text = TaoKhoaHoc.NameKhoaHoc;
+            txtMoTa.Text = TaoKhoaHoc.MoTa;
         }
     }
 }

@@ -10,7 +10,7 @@
     
     <Grid>
 
-        <Border CornerRadius="0,20,20,0">
+        <!--<Border CornerRadius="0,20,20,0">
             <Border.Background>
                 <ImageBrush ImageSource="/Images/order_page.png"
                          Stretch="None" />
@@ -27,7 +27,7 @@
                     FontFamily="/Fonts/#Rubik Medium"
                     Margin="0,145,160,0" />
 
-        </Grid>
+        </Grid>-->
 
         </Grid>
 </UserControl>

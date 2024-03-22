@@ -58,6 +58,16 @@ namespace Demo_Profile.Run
             this.Close();
             signIn.ShowDialog();
         }
+
+        private void Wind(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            lblName.Content = SignIn.Hoten;
+        }
     }
 
 }
